@@ -32,11 +32,20 @@ form{
     border-radius: 10px;
 }
 
+fieldset{
+    padding: 20px;
+}
+
 input{
-    margin: 5px;
+    display: block;
 }
 
 footer{
     width: 8%;
     margin: auto;
+}
+
+.btn{
+    display: flex;
+    margin-top: 10px;
 }
