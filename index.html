@@ -9,77 +9,81 @@
 <body>
     <header>
         <h1>Pizzaria Boa Pizza</h1>
+        <nav>Menu do site</nav>
     </header>
 
-    <nav>Menu do site</nav>
-
-    <form action="#" method="get">
-        <h2>
-            Cadastro de usuários
-        </h2>
-
-        <label for="Ccodigo">Código: </label>
-        <input type="number" name="codigo" id="Ccodigo" value="123456" readonly>
+    
+    <section>
         
-        <br>
-        <label for="Cnome">Nome: </label>
-        <input type="text" id="Cnome" name="nome" placeholder="Digite seu nome" required size="50" maxlength="12">
-        
-        <br>
-        <label for="Cemail">Email: </label>
-        <input type="email" id="Cemail" name="email">
-        <label for="Csenha">Senha: </label>
-        <input type="password" id="Csenha" name="senha">
+        <form action="#" method="get">
+            <h2>
+                Cadastro de usuários
+            </h2>
 
-        <br>
-        <label for="CIdade">Idade: </label>
-        <input type="number" min="18" max="80" name="idade">
+            <label for="Ccodigo">Código: </label>
+            <input type="number" name="codigo" id="Ccodigo" value="123456" readonly>
+            
+            <br>
+            <label for="Cnome">Nome: </label>
+            <input type="text" id="Cnome" name="nome" placeholder="Digite seu nome" required size="50" maxlength="12">
+            
+            <br>
+            <label for="Cemail">Email: </label>
+            <input type="email" id="Cemail" name="email">
+            <label for="Csenha">Senha: </label>
+            <input type="password" id="Csenha" name="senha">
 
-        <br>
-        <label for="CdataNa">Data de nascimento: </label>
-        <input type="date" id="CdataNa" name="dataNac">
+            <br>
+            <label for="CIdade">Idade: </label>
+            <input type="number" min="18" max="80" name="idade">
 
-        <br>
-        <label for="Cfoto">Foto: </label>
-        <input type="file" accept="image/*" name="imagem">
-        <br>
-        <label for="Ccor">Cor: </label>
-        <input type="color" id="Ccor" name="cor">
-        <br>
+            <br>
+            <label for="CdataNa">Data de nascimento: </label>
+            <input type="date" id="CdataNa" name="dataNac">
 
-        <label for="Cnivel">Nível: </label>
-        <input type="range"  id="Cnivel" min="10" max="30" name="nivel">  
-        
-        <br>
+            <br>
+            <label for="Cfoto">Foto: </label>
+            <input type="file" accept="image/*" name="imagem">
+            <br>
+            <label for="Ccor">Cor: </label>
+            <input type="color" id="Ccor" name="cor">
+            <br>
 
-        <input type="checkbox" id="Cportugues" name="portugues">
-        <label for="Cportugues">Português</label>
+            <label for="Cnivel">Nível: </label>
+            <input type="range"  id="Cnivel" min="10" max="30" name="nivel">  
+            
+            <br>
 
-        <input type="checkbox" id="Cmatematica" checked name="matematica">
-        <label for="Cmatematica">Matemática</label>
+            <input type="checkbox" id="Cportugues" name="portugues">
+            <label for="Cportugues">Português</label>
 
-        <br>
+            <input type="checkbox" id="Cmatematica" checked name="matematica">
+            <label for="Cmatematica">Matemática</label>
 
-        <input type="radio" name="sexo" id="Cmasc" checked>
-        <label for="Cmasc">Maculino</label>
+            <br>
 
-        <input type="radio" name="sexo" id="Cfem" checked>
-        <label for="Cfem">Feminino</label>
+            <input type="radio" name="sexo" id="Cmasc" checked>
+            <label for="Cmasc">Maculino</label>
 
-        <br>
+            <input type="radio" name="sexo" id="Cfem" checked>
+            <label for="Cfem">Feminino</label>
 
-        <label for="Ccarros">Escolha um carro: </label>
-        <select name="carro" id="Ccarros">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-        </select>
+            <br>
 
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Resetar">
-    </form>
+            <label for="Ccarros">Escolha um carro: </label>
+            <select name="carro" id="Ccarros">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </form>
+    </section>
+    
 
     <footer>
         <p>Copyright @ 2026</p>
