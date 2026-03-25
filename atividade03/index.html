@@ -1,85 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>RPG de mesa</h1>
-        <img src="image-removebg-preview.png" alt="Dados de RPG" class="elemento">
-    </header>
+body{
+    /* Direcionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
+    /* Fontes */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cabecalho{
+    /* Layout */
+    margin-top: -10px;
+    margin: -10px -8px ;
+    padding: 20px;
+    background-color: chocolate;
+    box-shadow: 10px 10px 8px rgba(139, 69, 19, 0.233);
     
 
-    <main>
-        <div class="imagem">
-
-            <img src="rpg101.jpg" alt="Desenho de pessoas jogando RPG de mesa">
-
-        </div>
-
-        <section>
-            <h2>O que é?</h2>
-
-            <p>
-                RPG de mesa (Role Playing Game) é um jogo colaborativo onde jogadores interpretam personagens em uma narrativa guiada por um mestre. Sem precisar de telas, utiliza-se papel, lápis, dados (como o d20) e imaginação para criar histórias de aventura, terror ou fantasia, onde decisões moldam o enredo.
-            </p>
-            
-            <h2>Principais Elementos do RPG de Mesa:</h2>
-
-            <ul>
-                <li>
-                    Mestre de Jogo (DM/GM): Cria o cenário, narra a história e árbitro das regras.
-                    Jogadores: Interpretam personagens (PCs) específicos na trama.
-                </li>
-
-                <li>
-                    Ficha de Personagem: Papel ou sistema digital que registra habilidades, atributos (força, magia, vida) e equipamentos do personagem.
-                    Dados (RPG Dice): Dados de diversos lados (d4, d6, d8, d10, d12, d20, d100) determinam o sucesso ou fracasso de ações arriscadas.
-                </li>
-
-                <li>
-                    Sistemas de Regras: Regras (como Dungeons & Dragons ou Vampiro: A Máscara) definem como o jogo é jogado. 
-                </li>
-            </ul>
-
-            <h2>Como funciona? </h2>
-
-            <ul>
-                <li>Narração: O Mestre descreve o ambiente e os desafios.</li>
-
-                <li>Ação: Os jogadores dizem o que seus personagens fazem.</li>
-
-                <li>Resultado: O Mestre aplica regras/dados e narra as consequências</li>
-            </ul>
-
-            <h2>Onde pode ser jogado? </h2>
-            <p>
-                Os jogos podem ser feitos presencialmente (com miniaturas e mapas) ou online (via plataformas virtuais), focando em combate, investigação, exploração ou interpretação
-            </p>
-        </section>
-
+    /* Fontes */
+    color: white;
+    p{
+        font-style: italic;
+        margin-top: -10px;
+    }
+     
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         
-    </main>
+    }
+}
 
-    <footer>
-        <div>
-           <h4>Entre em contato: </h4>
-           <a href="">kellydealmeidasantos237@gmai.com</a> 
-        </div>
-        
-        <div>
-            <h4>Ver mais em: </h4>
-            <a href="">Portifólio</a>
-        </div>
-
-        <div>
-            <h4>Feito por: </h4>
-            <a href="https://www.linkedin.com/in/kelly-de-almeida-santos/">Kelly Almeida</a>
-        </div>
-    </footer>
-</body>
-</html>
+.principal{
+    margin-top: 100px;
+}
