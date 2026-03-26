@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Aton";
+    src: url(/Pizzaria01/fonts/Anton-Regular.ttf);
+}
+
+body{
+    background-color: #520606;
+    margin: auto;
+    display: block;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+
+    margin-bottom: 5%;
+}
+
+.itemA{
+    order: 2;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.itemB{
+    order: 3;
+}
+
+.itemC{
+    order: 1;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+h1{
+    font-family: "Aton";
+    color: #ffca59;
+    text-shadow: 2px 3px 2px #f88c1171;
+    background-color: #993434;
+    height: 10%;
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#logo img{
+    width: 70%;
+}
+
+nav{
+    background-color: rgba(224, 188, 155, 0.829);
+    border-radius: 10px;
+    padding: 10px;
+    height: 50%;
+    display: flex;
+
+}
+ul{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    padding-bottom: 30px;
+}
+
+nav img{
+    width: 70%;
+}
+
+main{
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+    background-color: rgba(224, 188, 155, 0.829);
+    border-radius: 20px;
+}
