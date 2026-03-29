@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de estabelecimento</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <!-- <link rel="stylesheet" href="estilo.css"> -->
 </head>
 <body>
         <header>
-            <h1 class="itemA">Estabelecimento</h1>
+            <div class="itemH1 caixaVermelha">
+                <h1 class="h1Shadow fontAmarela">Estabelecimento</h1>
+            </div>
+            
 
-            <div id="logo" class="itemB">
+            <div id="logo" class="itemlogo">
                 <img src="/Pizzaria/imgs/logo.png" alt="Logo pizzaria Boa Pizza">
             </div>
 
-            <nav class="itemC">
+            <nav class="itemNav">
+                <div><img src="/Pizzaria/icons/menu-hamburguer.png" alt="menu" id="menu-mobile"></div>
                 <ul>
                     <li><a href="#"><img src="/Pizzaria/icons/icon-busca.png" alt="Busca"></a></li>
                     <li><a href="#"><img src="/Pizzaria/icons/icon-home.png" alt="Home"></a></li>
@@ -28,15 +33,43 @@
 
         <main>
             <form action="#">
-                <label for="nome">Nome: </label> <input type="text" name="nome" placeholder="Boa pizza...">
-                <label for="cnpj">CNPJ: </label> <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
-                <label for="instEstadual">Inscrição estadual: </label> <input type="text" name="instEstadual" placeholder="110.042.490.114">
-                <label for="endereco">Endereço: </label> <input type="text" name="endereco" placeholder="Rua Sapa Karol, 69 - Ponta Grossa">
-                <label for="telefone">Telefone: </label> <input type="tel" name="telefone" placeholder="(77) 6969-6969">
-                <label for="email">Email: </label> <input type="email" name="email" placeholder="vemComerM2026@rochadeira.com">
 
-                <input type="submit" value="Cancelar" class="btn">
-                <input type="button" value="Cadastro" class="btn">
+                <div class="contanerForm">
+                    <label for="nome">Nome: </label> <input type="text" name="nome" placeholder="Boa pizza...">
+                </div>
+
+                <div class="contanerForm">
+                    <label for="cnpj">CNPJ: </label> <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
+                </div>
+
+                <div class="contanerForm">
+                    <label for="instEstadual">Inscrição estadual: </label> <input type="text" name="instEstadual" placeholder="110.042.490.114">
+                </div>
+
+                <div class="contanerForm">
+                    <label for="endereco">Endereço: </label> <input type="text" name="endereco" placeholder="Rua Sapa Karol, 69 - Ponta Grossa">
+                </div>
+
+                <div class="contanerForm">
+                    <label for="telefone">Telefone: </label> <input type="tel" name="telefone" placeholder="(77) 6969-6969">
+                </div>
+
+                <div class="contanerForm">
+                    <label for="email">Email: </label> <input type="email" name="email" placeholder="vemComerM2026@rochadeira.com">
+                </div>
+
+                <div class="botoes">
+                        <div class = "caixaVermelha btn">
+                            <input type="submit" value="Cancelar" class="fontAmarela">
+                        </div>
+
+                        <div class = "caixaVermelha btn">
+                            <input type="button" value="Cadastro" class="fontAmarela">
+                        </div>
+                </div>
+                
+                
+                
             </form>
         </main>
 
