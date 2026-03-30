@@ -15,9 +15,10 @@
 }
 
 body{
-    
     background-color: #520606;
     margin: auto;
+
+    
 }
 
 /* Cabeçalho */
@@ -72,7 +73,7 @@ h1{
 }
 
 #logo img{
-    width: 60%;
+    width: 50%;
     margin-left: -10%;
     margin-right: 40%;
 }
@@ -91,7 +92,7 @@ h1{
 nav{
     background-color: #e0bc9bd3;
     border-radius: 10px;
-    padding: 15px;
+    padding: 1%;
     height: auto;
     display: flex;
 
@@ -108,11 +109,11 @@ ul{
 
 li{
     list-style-type: none;
-    padding-bottom: 30px;
+    padding-bottom: 4vh;
 }
 
 nav img{
-    width: 60%;
+    width: 4vh;
 }
 
 /* Conteúdo principal */
@@ -276,13 +277,30 @@ input::placeholder{
 footer{
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    margin: auto;
+    
+    background-color: rgba(255, 255, 255, 0.525);
+    border-radius: 10px;
+    width: 80%;
 }
 
 footer ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.525);
+    justify-content: space-around;
+    width: 50%;
+  
+}
+
+
+
+footer li{
+    font-family: "Antonio";
+    color: #520606;
+}
+
+footer a{
+    text-decoration: none;
+    color: #520606;
+    
 }
