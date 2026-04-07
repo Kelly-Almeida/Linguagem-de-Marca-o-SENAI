@@ -119,9 +119,7 @@ li{
     padding-bottom: 4vh;
 }
 
-nav img{
-    width: 4vh;
-}
+
 
 /* Conteúdo principal */
 main{
@@ -234,7 +232,7 @@ footer a{
     
 }
 
-
+/* Tela Mobile */
 @media screen and (max-width: 435px){
     #container{
         min-height: 98.2vh;
@@ -262,8 +260,6 @@ footer a{
         top: 0;
         transform: translateX(-15%);
         transform: translateY(15%);
-        
-        
     }
 
     #logo img{
@@ -369,3 +365,89 @@ footer a{
         padding-bottom: 4%;
     }
 }
+
+/* Tela de notebook */
+@media screen and (max-width: 1920px) and (min-width: 1024px){
+
+    /* Logo */
+
+    #logo img{
+        width: 50%;
+    }
+   
+    /* Conteúdo principal */
+    form{
+        width: 45%;
+        padding: 2%;
+        padding-top: calc(2% + 100px);
+    }
+
+    label{
+        font-size: 1.2vw;
+    }
+
+}
+
+/* Tela para table */
+
+    /* Modo retrato */
+@media screen and (min-width: 600px) and (max-width: 768px){
+    
+    /* H1 */
+    .itemH1{
+        margin-bottom: 10%;
+    }
+
+    h1{
+        font-size: 3vw;
+        letter-spacing: 1%;
+    }
+
+    /*Navegador*/
+
+
+    /*Logo*/
+    .itemlogo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(-40%);
+        transform: translateY(-120%);
+    
+    }
+
+    .itemNav{
+        order: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(20%);
+
+    }
+
+    /* Conteúdo principal */
+    form{
+        width: 75%;
+        padding: 2%;
+        padding-top: calc(2% + 130px);
+        margin-top: 22%;
+    }
+
+    label{
+        font-size: 2.5vw;
+    }
+
+    input::placeholder{
+        font-size:1.5vh;
+    }
+
+    .contanerForm{
+        height: 20%;
+        margin-bottom: 8%;
+    }
+
+    .btn input{
+        font-size: 2vw;
+    }
+}
+
