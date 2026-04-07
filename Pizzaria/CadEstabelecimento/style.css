@@ -105,6 +105,10 @@ nav{
 
 }
 
+nav img{
+    width: 4vh;
+}
+
 #menu-mobile{
     display: none;
 }
