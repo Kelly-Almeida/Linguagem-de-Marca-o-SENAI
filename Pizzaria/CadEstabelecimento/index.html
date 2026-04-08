@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de estabelecimento</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="/Pizzaria/CadEstabelecimento/script.js"></script>
     <!-- <link rel="stylesheet" href="estilo.css"> -->
 </head>
 <body>
@@ -17,19 +18,21 @@
             </div>
             
 
-            <div id="logo" class="itemlogo">
+            <div id="logo" class="itemlogo" >
                 <img src="/Pizzaria/imgs/logo.png" alt="Logo pizzaria Boa Pizza">
             </div>
 
             <nav class="itemNav">
-                <div><img src="/Pizzaria/icons/menu-hamburguer.png" alt="menu" id="menu-mobile"></div>
-                <ul>
+                <div ><img src="/Pizzaria/icons/menu-hamburguer.png" alt="menu" id="menu-mobile" onclick="abrirMenu()"></div>
+                <ul id ="menu">
                     <li><a href="#"><img src="/Pizzaria/icons/icon-busca.png" alt="Busca"></a></li>
                     <li><a href="#"><img src="/Pizzaria/icons/icon-home.png" alt="Home"></a></li>
                     <li><a href="#"><img src="/Pizzaria/icons/icon-login.png" alt="Login"></a></li>
                     <li><a href="#"><img src="/Pizzaria/icons/icon-compras.png" alt="Compras"></a></li>
                     <li><a href="#"><img src="/Pizzaria/icons/icon-cad.png" alt="Cadastro"></a></li>
                 </ul>
+
+                
             </nav>
         </header>
 
