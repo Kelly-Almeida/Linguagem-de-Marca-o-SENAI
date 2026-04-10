@@ -130,7 +130,6 @@ li{
 }
 
 
-
 /* Conteúdo principal */
 main{
     display: block;
@@ -151,8 +150,6 @@ form{
 
     margin-top: 2.5%;
 }
-
-
 
 .contanerForm{
     display: flex;
