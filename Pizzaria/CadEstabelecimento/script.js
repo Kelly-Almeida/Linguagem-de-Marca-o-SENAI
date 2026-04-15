@@ -9,9 +9,10 @@ function abrirMenu(){
 
     nav.style.top = "100%";
     nav.style.right = "0%";   
-    nav.style.backgroundColor = "rgba(255, 255, 255)";
+    nav.style.backgroundColor = "rgba(189, 150, 150, 0.86)";
     nav.style.width = "50%";
     nav.style.padding = "20px";
-    
+    nav.style.paddingTop = "10%"
+     
 
 }
