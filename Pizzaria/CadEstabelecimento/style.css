@@ -119,7 +119,11 @@ nav img:hover{
 #menu-mobile{
     display: none;
 }
-    
+   
+#fechar-mobile{
+    display: none;
+}
+
 ul{
     padding-top: 20px;
     flex-direction: column;

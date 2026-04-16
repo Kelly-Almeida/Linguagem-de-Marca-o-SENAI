@@ -4,31 +4,60 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "fofy";
+    src: url(/aulaCores/fonts/Borel-Regular.ttf);
+}
+
 body{
     margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 50%;
-
+    display: flex;
+    flex-direction: column;
     background-color: #eee0c6;
+    text-align: center;
 }
 
 header{
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin: auto;
     
 }
 
-#topo{
-    order: 0;
-
+#topo {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
-    height: 10%;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+#logo{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 200px;
+    padding: 5px;
+    background-color: rgba(134, 43, 1, 0.849);
+    border-radius: 10px;
 }
 
 #logo img{
-    height: 30%;
+    width: 100%;
+}
+
+h1{
+    font-family: "fofy";
+    margin-top: 10%;
+    font-size: 40pt;
+    color: rgba(134, 43, 1, 0.849);
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
 }
