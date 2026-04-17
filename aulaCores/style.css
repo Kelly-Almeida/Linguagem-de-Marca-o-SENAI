@@ -11,7 +11,7 @@
 
 body{
     margin: auto;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     background-color: #eee0c6;
@@ -21,7 +21,7 @@ body{
 header{
     display: block;
     margin: auto;
-    
+    text-align: center;
 }
 
 #topo {
@@ -33,11 +33,11 @@ header{
 
 #logo{
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 3%;
+    left: 3%;
     width: 200px;
     padding: 5px;
-    background-color: rgba(134, 43, 1, 0.849);
+    background-color: rgba(153, 90, 18, 0.671);
     border-radius: 10px;
 }
 
@@ -47,17 +47,107 @@ header{
 
 h1{
     font-family: "fofy";
-    margin-top: 10%;
+
+
     font-size: 40pt;
-    color: rgba(134, 43, 1, 0.849);
-    
+    color: rgba(134, 43, 1, 0.849); 
+    text-shadow: 2px 3px 1px rgba(66, 21, 0, 0.212);
+
+    background-color: rgba(233, 134, 21, 0.466);
+    padding: 30px 100px 10px 100px;
+
+    border-radius: 0px 0px 20px 20px;
+    border: solid 3px rgba(172, 84, 2, 0.116);
+    border-top: none;
 }
+
+.firula{
+    position: absolute;
+    top: 56px;
+    left: 64%;
+}
+
+#firula2{
+    top: 80px;
+    transform: rotate(-30rad);
+}
+
+.firula2{
+    position: absolute;
+    top: 25px;
+    left: 35%;
+}
+
+#firula3{
+    transform: rotate(30rad);
+}
+
+ #firula4{
+    top: 45px;
+    transform: rotate(3.5rad);
+ }
 
 nav ul{
     display: flex;
+    width: 80%;
+    justify-content: space-around;
     flex-direction: row;
+
+    background: linear-gradient(rgba(255, 219, 16, 0.164), rgba(226, 148, 2, 0.596));
+    padding: 10px;
+    
+    width: 70%;
+
+    border-radius: 5px;
+    border: none;
 }
 
 li{
     list-style: none;
+    
+}
+li img{
+    width: 55%;
+    opacity: 80%;
+}
+
+#menu{
+    
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+main{
+    margin-top: 4%;
+}
+
+h2{
+    font-family: "fofy";
+
+    color: rgba(0, 73, 0, 0.842);
+    font-style: italic;
+    font-weight: 400;
+}
+
+#produtos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10%;
+}
+
+figure{
+    width: 40%;
+    
+}
+
+figure img{
+        width: 90%;
+}
+
+.vertical{
+    width: 45%;
 }
