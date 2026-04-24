@@ -196,6 +196,23 @@ footer a{
 }
 
 
-@media screen and (min-width: 435px) {
-    
+@media screen and (max-width: 435px) {
+    body{
+        min-width: 435px;
+    }
+
+    h1{
+        font-size: 15pt;
+    }
+
+    #logo{
+        width: 100px;
+    }
+    #logo img{
+        width: 100%;
+    }
+
+    h1{
+        padding: 0;
+    }
 }
