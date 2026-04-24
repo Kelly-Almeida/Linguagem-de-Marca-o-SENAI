@@ -10,11 +10,16 @@
 }
 
 body{
+    min-width: 1000px;
+    background-color: #eee0c6;
+    box-shadow: 2px 2px 20px black;
+}
+#container{
+    background: linear-gradient(to bottom,rgba(78, 243, 78, 0.048), rgba(1, 92, 1, 0.041),rgba(70, 207, 70, 0.267),rgba(3, 117, 3, 0.342), rgba(0, 128, 0, 0.404));
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    background-color: #eee0c6;
     text-align: center;
 }
 
@@ -33,11 +38,11 @@ header{
 
 #logo{
     position: absolute;
-    top: 3%;
-    left: 3%;
+    top: 2%;
+    left: 5.2%;
     width: 200px;
     padding: 5px;
-    background-color: rgba(153, 90, 18, 0.671);
+    background-color: rgba(153, 90, 18, 0.829);
     border-radius: 10px;
 }
 
@@ -49,54 +54,29 @@ h1{
     font-family: "fofy";
 
 
-    font-size: 40pt;
+    font-size: 35pt;
     color: rgba(134, 43, 1, 0.849); 
     text-shadow: 2px 3px 1px rgba(66, 21, 0, 0.212);
 
-    background-color: rgba(233, 134, 21, 0.466);
+    background-color: rgba(255, 223, 186, 0.541);
     padding: 30px 100px 10px 100px;
 
     border-radius: 0px 0px 20px 20px;
-    border: solid 3px rgba(172, 84, 2, 0.116);
+    border: solid 10px rgba(172, 98, 2, 0.705);
     border-top: none;
 }
 
-.firula{
-    position: absolute;
-    top: 56px;
-    left: 64%;
-}
 
-#firula2{
-    top: 80px;
-    transform: rotate(-30rad);
-}
-
-.firula2{
-    position: absolute;
-    top: 25px;
-    left: 35%;
-}
-
-#firula3{
-    transform: rotate(30rad);
-}
-
- #firula4{
-    top: 45px;
-    transform: rotate(3.5rad);
- }
 
 nav ul{
     display: flex;
-    width: 80%;
     justify-content: space-around;
     flex-direction: row;
 
-    background: linear-gradient(rgba(255, 219, 16, 0.164), rgba(226, 148, 2, 0.596));
+    background: linear-gradient(rgba(255, 219, 16, 0.356), rgba(226, 148, 2, 0.596));
     padding: 10px;
     
-    width: 70%;
+    width: 90%;
 
     border-radius: 5px;
     border: none;
@@ -122,14 +102,21 @@ li img{
 
 main{
     margin-top: 4%;
+    
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
 
 h2{
     font-family: "fofy";
-
     color: rgba(0, 73, 0, 0.842);
     font-style: italic;
-    font-weight: 400;
+    font-size: 20pt;
+    font-weight: 600;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-bottom: solid 1px green;
 }
 
 #produtos{
@@ -140,14 +127,75 @@ h2{
 }
 
 figure{
-    width: 40%;
-    
+    width: 35%;
+    border: solid 2px rgba(0, 56, 0, 0.445);
+    padding-bottom: 10px;
+    margin: 1%;
+    background-color: #fcedd2c9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.048);
 }
 
 figure img{
-        width: 90%;
+        width: 100%;
 }
 
-.vertical{
-    width: 45%;
+figcaption{
+    font-family: "fofy";
+    color: rgb(0, 66, 0);
+    font-size: 14pt;
+    padding-top: 1%;
+}
+
+#sobreNos{
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+p{
+    font-family: "fofy";
+    width: 40%;
+    color: rgb(0, 48, 0);
+}
+
+#produtor{
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+
+    margin-top: 2%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+footer li{
+    margin: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #eee0c6;
+    font-family: "fofy";
+}
+
+.maior{
+    transition: transform 0.6s ease-in-out;
+}
+
+.maior:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 435px) {
+    
 }
