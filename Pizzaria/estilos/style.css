@@ -41,7 +41,6 @@ header{
 /*Título*/
 .itemH1{
     order: 2;
-    
     height: 10%;
     width: auto;
     margin-top: 20px;
@@ -129,7 +128,7 @@ nav img:hover{
     
 }
 
-ul{
+.vertiacal ul{
     padding-top: 20px;
     flex-direction: column;
 }
@@ -146,7 +145,7 @@ main{
     margin-bottom: 2%;
 }
 
-form{
+.conteudo-central{
     
     z-index: -1;
 
@@ -354,7 +353,7 @@ footer a:hover{
     }
 
 
-    form{
+    .conteudo-central{
         width: 90%;
         padding: 5%;
         padding-top: calc(2% + 100px);

@@ -5,16 +5,18 @@ function abrirMenu(){
     iconeFechar = document.getElementById("fechar-mobile");
     
     menu.style.display ="flex";
+    menu.style.flexDirection = "column";
     iconeMenu.style.display = "none";
     iconeFechar.style.display = "flex";
 
     nav.style.transition = "1s";
     nav.style.top = "100%";
     nav.style.right = "-2%";   
-    nav.style.backgroundColor = "rgba(255, 245, 245, 0.86)";
+    nav.style.backgroundColor = "rgba(255, 245, 245, 0.66)";
     nav.style.width = "20%";
     nav.style.padding = "20px";
     nav.style.paddingTop = "10%"
+
      
 
 }
