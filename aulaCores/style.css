@@ -17,69 +17,61 @@ body{
 #container{
     background: linear-gradient(to bottom,rgba(78, 243, 78, 0.048), rgba(1, 92, 1, 0.041),rgba(70, 207, 70, 0.267),rgba(3, 117, 3, 0.342), rgba(0, 128, 0, 0.404));
     margin: auto;
-    width: 90%;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 header{
-    display: block;
-    margin: auto;
+    height: 180px;
+    display: flex;
     text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px 10px 100px;
+    box-shadow: 1px 1px 10px rgba(49, 26, 0, 0.37);
 }
 
-#topo {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#titulo{
+    border-bottom: none;
+    font-size: 30pt;
+    color: rgba(158, 84, 15, 0.918);
 }
 
 #logo{
-    position: absolute;
-    top: 2%;
-    left: 5.2%;
-    width: 200px;
+    order: -1;
+    width: 180px;
+    height: 130px;
     padding: 5px;
-    background-color: rgba(153, 90, 18, 0.829);
+    background-color: rgba(55, 117, 66, 0.575);
     border-radius: 10px;
 }
 
 #logo img{
-    width: 100%;
+    height: 100%;
 }
-
-h1{
-    font-family: "fofy";
-
-
-    font-size: 35pt;
-    color: rgba(134, 43, 1, 0.849); 
-    text-shadow: 2px 3px 1px rgba(66, 21, 0, 0.212);
-
-    background-color: rgba(255, 223, 186, 0.541);
-    padding: 30px 100px 10px 100px;
-
-    border-radius: 0px 0px 20px 20px;
-    border: solid 10px rgba(172, 98, 2, 0.705);
-    border-top: none;
-}
-
 
 
 nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-
-    background: linear-gradient(rgba(255, 219, 16, 0.356), rgba(226, 148, 2, 0.596));
     padding: 10px;
-    
-    width: 90%;
+    width: 100%;
 
     border-radius: 5px;
     border: none;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-area: center;
 }
 
 li{
@@ -108,7 +100,7 @@ main{
 }
 
 
-h2{
+h2, h1{
     font-family: "fofy";
     color: rgba(0, 73, 0, 0.842);
     font-style: italic;
