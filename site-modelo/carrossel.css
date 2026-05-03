@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(0, 5, 33);
+   
+
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Carrossel simples*/
+
+.carrosselGroup{
+    margin: auto;
+}
+
+.carrossel{
+    width: 80%;
+    overflow-x: auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+    scroll-marker-group: after;
+}
+
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+
+.carossel::scroll-marker-group{
+    justify-content: center;
+    gap: .5em;
+}
+
+.card::scroll-marker{
+    content: " ";
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.card::scroll-marker:target-current{
+    background-color: purple;
+}
+
+.carrossel::scroll-button(right), .carrossel::scroll-button(left){
+    content: '>';
+    font-family:Verdana, Geneva, Tahoma;
+    font-style: bold;
+    font-size: 20pt;
+    background-color: #000ecdae;
+    border: none;
+    margin: auto;
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    translate: -50%;
+}
+
+.carrossel::scroll-button(right):disabled, .carrossel::scroll-button(left):disabled{
+    background-color: rgba(4, 0, 75, 0.434);
+    color: rgba(255, 255, 255, 0.526);
+}
+
+.carrossel::scroll-button(left){
+    content: '<';
+    order: -1;
+    translate: 50%;
+}
+
+.card{
+    flex : 0 0 22em;
+    aspect-ratio: 5 / 3;
+    background-color: #000548c9;
+    padding: 1em;
+    color: white;
+    border-radius: 0.5em;
+    text-align: center;
+    align-content: center;
+}
+
+/* Carrossel com firulas*/
+
+.setsBetweenCarts .carrossel::scroll-button(right), .setsBetweenCarts .carrossel::scroll-button(left){
+    position: fixed;
+    position-anchor: --carrossel;
+    /*Horizonta e depois vertical*/
+    position-area: right center;
+    
+}
+
+.setsBetweenCarts .carrossel::scroll-button(left){
+    position-area: left center;
+    
+}
+
+.setsBetweenCarts .carrossel{
+    position: relative;
+    anchor-name: --carrossel;
+}
+
+/* Carrossel com scroll snapping*/
+
+.scrollSnaping{
+    scroll-snap-type: x mandatory;
+
+    .card{
+        scroll-snap-align: start;
+    }
+}
+
+@media(max-width: 500px){
+    .card{
+        flex: 0 0 100%;
+    }
+}

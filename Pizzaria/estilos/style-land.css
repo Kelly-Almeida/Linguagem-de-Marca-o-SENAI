@@ -55,14 +55,12 @@ section{
 }
 
 .figuras{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 40px;
+    
     
     figure{
         margin: auto;
         background-color:#6e2626;
-        width: 100%;
+        flex: 0 0 5em;
         height:270px;
         padding: 10px;
         text-align: center;
@@ -78,6 +76,22 @@ section{
         width: 350px;
     }
 }
+
+.carrossel{
+    ouverflow-x: auto;
+    display: flex;
+}
+
+.carrossel::-webkit-scrollbar{}
+
+.carrosselGrupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+
 
 .final{
     position: relative;
