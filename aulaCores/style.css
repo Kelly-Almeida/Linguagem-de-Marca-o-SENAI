@@ -24,7 +24,7 @@ body{
 }
 
 header{
-    height: 130px;
+    height: 160px;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
@@ -96,14 +96,15 @@ h2{
     font-style: italic;
     font-size: 20pt;
     font-weight: 600;
-    margin-top: 1%;
+    margin-top: .05%;
     margin-bottom: 2%;
     border-bottom: solid 1px green;
 }
 
 #produtos{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2%;
 }
 
@@ -127,6 +128,25 @@ figure{
     }
 }
 
+.butao{
+
+    p{
+        background-color: rgba(0, 128, 0, 0.288);
+        width: 50%;
+        transition: transform 1s ease-in-out;
+    }
+    
+    margin-top: .6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+
+    p:hover{
+        transform: scale(1.05);
+        color: #1b300ebe;
+    }
+}
 
 figure img{
     width: 100%;
@@ -145,6 +165,10 @@ figcaption{
     gap: 5%;
     justify-content: space-around;
     text-align: justify;
+}
+
+aside h2{
+    margin-top: 2%;
 }
 
 p{

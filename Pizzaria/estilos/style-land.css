@@ -56,7 +56,7 @@ section{
 
 .figuras{
     
-    
+
     figure{
         margin: auto;
         background-color:#6e2626;
@@ -77,18 +77,18 @@ section{
     }
 }
 
-.carrossel{
-    ouverflow-x: auto;
-    display: flex;
+.bordaSupInf{
+    border: solid 1px #4719196b;
+    border-left: none;
+    border-right: none;
 }
-
-.carrossel::-webkit-scrollbar{}
 
 .carrosselGrupo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;
+    
 }
 
 
