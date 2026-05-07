@@ -1,4 +1,8 @@
 @font-face {
+    font-family: "Aton";
+    src: url("/Pizzaria/fonts/Anton-Regular.ttf");
+}
+@font-face {
     font-family: "Antonio";
     src: url("/Pizzaria/fonts/Antonio-VariableFont_wght.ttf");
 }
@@ -50,8 +54,13 @@ body{
     left: 2%;
 }
 
+
+/*Corpo do site*/
+
+/*Parte da pizzas*/
 section{
     text-align: center;
+    margin: auto;
 }
 
 .figuras{
@@ -61,10 +70,13 @@ section{
         margin: auto;
         background-color:#6e2626;
         flex: 0 0 5em;
-        height:270px;
+        width: 450px;
+        height: 270px;
         padding: 10px;
         text-align: center;
         border-radius: 10px;
+        
+        transition: transform .4s ease-in-out;
     }
 
     figcaption{
@@ -73,7 +85,15 @@ section{
     }
 
     img{
-        width: 350px;
+        height: 90%;
+    }
+}
+
+figure:hover{
+    transform: scale(1.05);
+    
+    .figuras{
+        box-shadow: 1px 1px 1px #6e2626;
     }
 }
 
@@ -88,11 +108,87 @@ section{
     justify-content: center;
     align-items: center;
     gap: 2em;
-    
+
 }
 
 
+.cardapio{
+    text-decoration: none;
+}
 
+/*Sessão de promoções*/
+
+.promos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #692424;
+    height: 120px;
+    border-radius: 10px;
+    margin-top: 3em;
+    padding: 20px;
+}
+
+.butaoCard{
+    display: none;
+    background-color: #990000;
+    border-radius: 5px;
+}
+
+.butaoCard a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    
+}
+
+.cardPromo{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fcc325c0;
+    color: #742222a9;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: -5px 5px 1px #dbb13e91;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+    p{
+        padding: 2px;
+        margin-top: .3em;
+        font-size: 9pt;
+    }
+    transition: transform .1s ease-in;
+}
+
+.card{
+    anchor-name: --card;
+}
+
+.cardPromo:hover{
+    transform: scale(1.05);
+    
+    p{
+        margin-bottom: 20px;
+    }
+
+    .butaoCard{
+        display: block;
+        position: fixed;
+        position-anchor: --card;
+        position-area: bottom;
+        
+    }
+}
+
+.cardPromo h3{
+    font-family: "Antonio";
+    color: #990000;
+    font-size: 12pt;
+}
+
+/*footer*/
 .final{
     position: relative;
     margin: 0;

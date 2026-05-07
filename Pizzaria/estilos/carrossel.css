@@ -1,16 +1,21 @@
 
 .carrosselGroup{
     margin: auto;
+    margin-bottom: 2em;
 }
 
 .carrossel{
+    height: 20em;
     overflow-x: auto;
-    margin: 3em auto;
+    margin: 1em 1.5em 1em 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
     display: flex;
-    gap: 1em;
+    gap: 2.5em;
     scroll-behavior: smooth;
     scroll-marker-group: after;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
+    
 }
 
 .carrossel::-webkit-scrollbar{
