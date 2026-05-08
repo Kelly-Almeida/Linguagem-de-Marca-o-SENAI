@@ -57,6 +57,28 @@ body{
 
 /*Corpo do site*/
 
+/*Apresentação*/
+.apresentacao{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+#textApresentacao{
+    width: 25%;
+    text-align: justify;
+    color: #3a1414;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.3px;
+    line-height: 22px;
+    
+}
+
+.pessoas{
+    width: 35%;
+}
 /*Parte da pizzas*/
 section{
     text-align: center;
@@ -186,6 +208,37 @@ figure:hover{
     font-family: "Antonio";
     color: #990000;
     font-size: 12pt;
+}
+
+/*Informações de contato e endereço*/
+.ondeEncontrar{
+    margin: auto;
+    width: 70%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+#ondeEncontrarH2{
+    border-bottom: solid 1px #4719196b;
+    margin-top: 2%;
+    font-size: 22pt;
+    font-family: "Antonio";
+    color: #7a1818;
+    padding-bottom: 1%;
+}
+.contatos{
+    background-color: #8f0e0ea2;
+    border-radius: 10px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contato img{
+    width: 90px;
 }
 
 /*footer*/
