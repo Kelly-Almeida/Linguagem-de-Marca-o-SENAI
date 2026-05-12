@@ -239,8 +239,13 @@ figure:hover{
 }
 .contato img{
     width: 90px;
+
+    transition: transform 1s ease-in-out;
 }
 
+.contato img:hover{
+    transform: scale(1.1);
+}
 /*footer*/
 .final{
     position: relative;

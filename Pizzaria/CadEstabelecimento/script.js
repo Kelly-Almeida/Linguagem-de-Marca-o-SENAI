@@ -29,6 +29,4 @@ function fecharMenu(){
     nav.style.transition = "0.4s";
     menu.style.display = "none";
 
-    
-
 }
