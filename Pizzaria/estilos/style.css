@@ -92,7 +92,7 @@ h1{
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateY(40%);
+    transform: translateY(25%);
 
 }
 
@@ -100,6 +100,7 @@ nav{
     background-color: #e0bc9bd3;
     border-radius: 10px;
     padding: 1%;
+    padding-top: 3%;
     height: auto;
     display: flex;
 
@@ -309,9 +310,9 @@ footer a:hover{
      
     /*Menu*/
     .itemNav{
-        top: 5%;
+        top: 10%;
         right: 0;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
         
     }
     nav{
@@ -323,8 +324,7 @@ footer a:hover{
         display: block;
         margin-top: 80%;
         position: absolute;
-        
-        transform: translateX(-60%);
+        transform: translateX(-50%);
         
         width: 35px;
     }
