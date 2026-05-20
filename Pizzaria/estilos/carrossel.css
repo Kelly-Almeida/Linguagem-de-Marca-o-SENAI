@@ -85,4 +85,17 @@
     .itemCarrossel{
         flex: 0 0 100%;
     }
+
+    .carrossel{
+        padding-left: 2em;
+        padding-right: 0;
+        margin: 0;
+        gap: 5px;
+    }
+
+    .figuras figure{
+        height: 220px;
+        margin-left: 0;
+    }
+    
 }
