@@ -278,45 +278,50 @@ figure:hover{
     /* Navegador */
     #navegador-vertical{
         position: fixed;
-        top: 0;
+        top: -6%;
         right: -100%;
-        width: 70%;
-        height: 100vh;
+        width: 30%;
+        height: 85vh;
         background-color: rgba(255, 245, 245, 0.95);
         box-shadow: -5px 0 15px rgb(0,0,0, 0.2);
         transition: right 0.4s ease-in-out;
         padding: 80px 20px 20px 20px;
         z-index: 9999;
-        transform: none;
+        transform: none !important;
+        height: 85vh !important;
+        width: 30% !important;
     }
 
     .nav-vertical.active{
-        right: 0;
+        right: 0 !important;
     }
     .nav-vertical ul{
         display: flex !important;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px;
+        padding: 0;
     }
 
     #menu-mobile{
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        
+        transform: translateY(-300px);
         cursor: pointer;
         z-index: 1000;
     }
 
     #fechar-mobile-li{
-        display: relative;
+        display: flex;
         width: 35px;
-        top: 20px ;
     }
 
-    #navegador-vertical ul{
-        display: none;
+    #fechar-mobile{
+        display: flex;
+        width: 30px;
     }
+
     #menu-mobile{
         display: block;
         position: absolute;
