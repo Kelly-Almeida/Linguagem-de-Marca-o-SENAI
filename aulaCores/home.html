@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrossel.css">
     <title>Sabores da Terra</title>
 </head>
 <body>
@@ -25,64 +26,84 @@
 
         
         <main>
-            <section>
+
+            <section >
                 <h2>Os melhores produtos orgânicos</h2>
-                <div id="produtos">
-                    <figure class="maior" tabindex="0">
-                        <img src="/aulaCores/imgs/nozes.png" alt="Pacote de Nozes 'Energia da Terra'">
-                        <figcaption>Nozes "Energia da Terra"</figcaption>
+                <div class="carrossel">
+                    <ul class="itensCarrossel">
+                    <li class="produtos">
+                        <figure class="maior" tabindex="0">
+                            <img src="/aulaCores/imgs/nozes.png" alt="Pacote de Nozes 'Energia da Terra'">
+                            <figcaption>Nozes "Energia da Terra"</figcaption>
 
-                        <div class="butao">
-                            <a href="#">
-                              <p>Comprar!</p>  
-                            </a>
-                        </div>
-                    </figure>
+                            <div class="butao">
+                                <a href="#">
+                                <p>Comprar!</p>  
+                                </a>
+                            </div>
+                        </figure>
+                    </li>
 
-                    <figure class="maior" tabindex="0">
-                        <img src="/aulaCores/imgs/mel.png" alt="Pote de Mel Orgânico">
-                        <figcaption> Mel Orgânico de Florada Silvestre</figcaption>
+                    <li class="produtos">
+                        <figure class="maior" tabindex="0">
+                            <img src="/aulaCores/imgs/mel.png" alt="Pote de Mel Orgânico">
+                            <figcaption> Mel Orgânico de Florada Silvestre</figcaption>
 
-                        <div class="butao">
-                            <a href="#">
-                              <p>Comprar!</p>  
-                            </a>
-                        </div>
-                        
-                    </figure>
+                            <div class="butao">
+                                <a href="#">
+                                <p>Comprar!</p>  
+                                </a>
+                            </div>
+                            
+                        </figure>
+                    </li>
 
-                    <figure class="maior" tabindex="0">
-                        <img src="./imgs/ervas.png" alt="Pacote de Ervas 'Brisa do Pomar'">
-                        <figcaption>Infusão de Ervas "Brisa do Pomar"</figcaption>
+                    <li class="produtos">
+                        <figure class="maior" tabindex="0">
+                            <img src="./imgs/ervas.png" alt="Pacote de Ervas 'Brisa do Pomar'">
+                            <figcaption>Infusão de Ervas "Brisa do Pomar"</figcaption>
 
-                        <div class="butao">
-                            <a href="#">
-                              <p>Comprar!</p>  
-                            </a>
-                        </div>
-                    </figure>
+                            <div class="butao">
+                                <a href="#">
+                                <p>Comprar!</p>  
+                                </a>
+                            </div>
+                        </figure>
+                    </li>
 
-                    <figure class="maior" tabindex="0">
-                        <img src="./imgs/azeite.png" alt="Frasco de azeite de oliva extra virgem prensado a frio" class="vertical">
-                        <figcaption>Azeite de Oliva Extra Virgem Prensado a Frio</figcaption>
+                    <li class="produtos">
+                        <figure class="maior" tabindex="0">
+                            <img src="./imgs/azeite.png" alt="Frasco de azeite de oliva extra virgem prensado a frio" class="vertical">
+                            <figcaption>Azeite de Oliva Extra Virgem Prensado a Frio</figcaption>
 
-                        <div class="butao">
-                            <a href="#">
-                              <p>Comprar!</p>  
-                            </a>
-                        </div>
-                    </figure>
+                            <div class="butao">
+                                <a href="#">
+                                <p>Comprar!</p>  
+                                </a>
+                            </div>
+                        </figure>
+                    </li>
 
-                    <figure class="maior" tabindex="0">
-                        <img src="./imgs/farinha.png" alt="Pacote de Farinha de Amêndoas Integral" class="vertical">
-                        <figcaption>Farinha de Amêndoas Integral</figcaption>
+                    <li class="produtos">
+                        <figure class="maior" tabindex="0">
+                            <img src="./imgs/farinha.png" alt="Pacote de Farinha de Amêndoas Integral" class="vertical">
+                            <figcaption>Farinha de Amêndoas Integral</figcaption>
 
-                        <div class="butao">
-                            <a href="#">
-                              <p>Comprar!</p>  
-                            </a>
-                        </div>
-                    </figure> 
+                            <div class="butao">
+                                <a href="#">
+                                <p>Comprar!</p>  
+                                </a>
+                            </div>
+                        </figure> 
+                    </li>
+                    </ul>
+
+                    <button class="butaoCarrossel" id="esquerda">&#10094</button>
+                    <button class="butaoCarrossel" id="direita">&#10095</button>
+                    
+                </div>
+                
+
             </section>
 
             <aside >
@@ -111,3 +132,4 @@
     
 </body>
 </html>
+
