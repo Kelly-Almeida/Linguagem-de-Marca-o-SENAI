@@ -8,9 +8,13 @@
     src: url(/Pizzaria/fonts/Antonio-VariableFont_wght.ttf);
 }
 
-.combos, .pizzas{
+.combos, .pizzas, .bebidas{
     display: flex;
     flex-direction: row;
+}
+
+.pizzas, .bebidas{
+    flex-wrap: wrap;
 }
 
 #pizzas {
@@ -26,8 +30,11 @@
 .pizzas figure{
     width: 600px;
     height: 320px;
+    margin-bottom: 2%;
     padding-bottom: 40px;
 }
+
+
 
 .hProdutos{
     font-family: "Aton";
