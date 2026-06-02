@@ -1,0 +1,101 @@
+
+.carrosselGroup{
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.carrossel{
+    height: 20em;
+    overflow-x: auto;
+    margin: 1em 1.5em 1em 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    gap: 2.5em;
+    scroll-behavior: smooth;
+    scroll-marker-group: after;
+    scroll-snap-type: x proximity;
+    
+}
+
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+
+
+.carrossel::scroll-button(right), .carrossel::scroll-button(left){
+    content: '>';
+    font-family:Verdana, Geneva, Tahoma;
+    font-style: bold;
+    font-size: 20pt;
+    background-color: #991200d8;
+    border: none;
+    margin: auto;
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    translate: -50%;
+}
+
+.carrossel::scroll-button(right):disabled, .carrossel::scroll-button(left):disabled{
+    background-color: rgba(75, 0, 0, 0.434);
+    color: rgba(255, 255, 255, 0.526);
+}
+
+.carrossel::scroll-button(left){
+    content: '<';
+    order: -1;
+    translate: 50%;
+}
+
+
+/* Carrossel com firulas*/
+
+.setsBetweenCarts .carrossel::scroll-button(right), .setsBetweenCarts .carrossel::scroll-button(left){
+    position: fixed;
+    position-anchor: --carrossel;
+    /*Horizonta e depois vertical*/
+    position-area: right center;
+    
+}
+
+.setsBetweenCarts .carrossel::scroll-button(left){
+    position-area: left center;
+    
+}
+
+.setsBetweenCarts .carrossel{
+    position: relative;
+    anchor-name: --carrossel;
+}
+
+/* Carrossel com scroll snapping*/
+
+.scrollSnaping{
+    scroll-snap-type: x mandatory;
+
+    .itemCarrossel{
+        scroll-snap-align: start;
+    }
+}
+
+@media(max-width: 500px){
+    .itemCarrossel{
+        flex: 0 0 100%;
+    }
+
+    .carrossel{
+        padding-left: 2em;
+        padding-right: 0;
+        margin: 0;
+        gap: 5px;
+    }
+
+    .figuras figure{
+        height: 220px;
+        margin-left: 0;
+    }
+    
+}

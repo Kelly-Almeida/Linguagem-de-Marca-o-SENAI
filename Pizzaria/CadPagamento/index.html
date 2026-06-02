@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de forma de pagamento</title>
+    <link rel="stylesheet" href="/Pizzaria/estilos/style.css"> 
+    <script src="/Pizzaria/CadEstabelecimento/script.js"></script>
+    
+</head>
+<body>
+    <div id="container">
+
+    
+        <header>
+            <div class="itemH1 caixaVermelha">
+                <h1 class="h1Shadow fontAmarela">Forma de pagamento</h1>
+            </div>
+            
+
+            <div id="logo" class="itemlogo" >
+                <img src="/Pizzaria/imgs/logo.png" alt="Logo pizzaria Boa Pizza">
+            </div>
+
+            <nav class="itemNav" id="navegador">
+                <div ><img src="/Pizzaria/icons/menu-hamburguer.png" alt="menu" id="menu-mobile" onclick="abrirMenu()"></div>
+
+                <ul id ="menu">
+                    <li id="fechar-mobile-li"><img src="/Pizzaria/icons/fechar.png" alt="Fechar" id="fechar-mobile" onclick="fecharMenu()"></li>
+                    <li><a href="#"><img src="/Pizzaria/icons/icon-busca.png" alt="Busca"></a></li>
+                    <li><a href="#"><img src="/Pizzaria/icons/icon-home.png" alt="Home"></a></li>
+                    <li><a href="#"><img src="/Pizzaria/icons/icon-login.png" alt="Login"></a></li>
+                    <li><a href="#"><img src="/Pizzaria/icons/icon-compras.png" alt="Compras"></a></li>
+                    <li><a href="#"><img src="/Pizzaria/icons/icon-cad.png" alt="Cadastro"></a></li>
+                    <li><a href="#"><img src="/Pizzaria/icons/cadastros.png" alt="Cadastros"></a></li>
+                </ul>
+
+                
+            </nav>
+        </header>
+
+
+        <main>
+            <form action="#" class="conteudo-central">
+
+                <div class="contanerForm">
+                    <label for="tipo">Tipo: </label> 
+                    <select name="tipo" id="tipo">
+                        <option value="Pix">Pix</option>
+                        <option value="cartaoDebito">Cartão de Débito</option>
+                        <option value="cartaoCredito">Cartão de Crédito</option>
+                    </select>
+                </div>
+
+                <div class="contanerForm" id="chavePix">
+                    <label for="chavePix">Chave pix: </label> <input type="text" name="chavePix" placeholder="111.111.111-11">
+                </div>
+
+                <div class="contanerForm" id="numCartao">
+                    <label for="numCartao">Número do cartão: </label> <input type="text" name="numCartao" placeholder="12345678910">
+                </div>
+
+                <div class="contanerForm" id="cvv">
+                    <label for="cvv">CVV: </label> <input type="password" name="cvv" placeholder="1325">
+                </div>
+
+
+                <div class="botoes">
+                        <div class = "caixaVermelha btn">
+                            <input type="submit" value="Cancelar" class="fontAmarela">
+                        </div>
+
+                        <div class = "caixaVermelha btn">
+                            <input type="button" value="Cadastro" class="fontAmarela">
+                        </div>
+                </div>
+                
+                
+                
+            </form>
+        </main>
+
+        <footer>
+            <ul>
+                <li>Rua Sapa Karol, 69 - Ponta Grossa</li>
+                <span class="ponto"></span>
+                <li>(77) 69699-9696</li>
+                <span class="ponto"></span>
+                <li><a href="">vemComerM2026@rochadeira.com</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
