@@ -23,7 +23,7 @@ function verDados(){
     form.style.display = "none";
 
     tabela.innerHTML = `
-    <tr>
+    <tr class = "titulo">
         <th>Nome</th>
         <th>Idade</th>
         <th>Curso</th>
